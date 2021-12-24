@@ -17,81 +17,35 @@
 		</div>
 	</header>
 	
-	<section class="p_l_section row content_start wrap p_r_section" style="padding-top: 80px;">
-		<div id="item1" class="card">
-			<div class="card_img" style="background-image: url(data/photo.png);"></div>
-			<div class="column card_container">
-				<div class="row content_between align_center" style="padding: 10px 20px; width: 100%;">
-					<div class="row">
-						<div class="card_item">яйцо</div>
-						<div class="card_item">курица</div>
-					</div>
-					<input id='itemCheck1' onclick="colorDef(1)" class="card_checkbox" style="" type="checkbox" name="">
-				</div>
-				<div class="card_h">Глазунья с помидорами</div>
-				<div class="card_text" id="area1" onclick="moreOn(1)">
-					1. Сковороду растительное разогреть с растительным маслом.<br>
-					2. Помидор промыть, разрезать пополам и каждую половину нарезать вертикально на ломтики.<br>
-					3. Когда масло прогрелось выкладываем помидоры, перемешиваем и жарим<sta id='sta1'>...</sta>
-					<span class="hidden" id="hidden1">
-						закрытой крышкой.
-						Когда помидоры поджарились аккуратно разбиваем яйца и жарим не закрывая крышки, чтобы не испортить внешний вид желтка. Так он останется и жидким и не покроется не прозрачной пленкой. 
-						Когда белок поджарится аккуратно выкладываем яичницу на тарелку, солим если требуется и подаем. Не солим когда жарим, чтобы не получить белых пятен на желтке. 
+	<section class="p_l_section row content_between wrap p_r_section" style="padding-top: 80px;">
 
-						Приятного аппетита.
-					</span>
-				</div>
-				<textarea class="hidden" id="textarea1">
-						1. Сковороду растительное разогреть с растительным маслом.<br>
-						2. Помидор промыть, разрезать пополам и каждую половину нарезать вертикально на ломтики.<br>
-						3. Когда масло прогрелось выкладываем помидоры, перемешиваем и жарим закрытой крышкой.
-						Когда помидоры поджарились аккуратно разбиваем яйца и жарим не закрывая крышки, чтобы не испортить внешний вид желтка. Так он останется и жидким и не покроется не прозрачной пленкой. 
-						Когда белок поджарится аккуратно выкладываем яичницу на тарелку, солим если требуется и подаем. Не солим когда жарим, чтобы не получить белых пятен на желтке. 
-
-						Приятного аппетита.
-					</textarea>
-				<div class="row content_start" style="padding-left: 40px;">
-					<a class="card_btn">12.12.12</a>
-					<a class="card_btn">save</a>
-					<a class="card_btn">edit</a>
-					<a class="card_btn" onclick="deleteEl(1)">dest</a>
-				</div>
-
-			</div>
+		<div class="new_card p_l_card p_r_card p_t_card m_b_card ">
+			<div class="new_card_h m_b_card">Яичница</div>
+			<div class="row content_between new_card_p dot_styled_bottom m_b_card p_b_card"><div>12.12.2021</div><div>12:00</div></div>
+			<div class="new_card_h3">Ингридиенты</div>
+			<div class="row content_between new_card_p"><div>Яйцо</div><div>2 шт</div></div>
+			<div class="row content_between new_card_p"><div>Яйцо</div><div>2 шт</div></div>
+			<div class="row content_between new_card_p dot_styled_bottom m_b_card p_b_card"><div>Яйцо</div><div>2 шт</div></div>
+			<div class="row content_between new_card_p dot_styled_bottom m_b_card p_b_card"><div class="new_card_h3">Время приготовления:</div><div>2 ч.</div></div>
+			<div class="new_card_h3">Рецепт</div>
+			<div class="dot_styled_bottom m_b_card p_b_card new_card_p">1. Налейте растительное масло в чистую сковороду и поставьте на огонь.<br> 2. Разбейте яйца и вылейте их на сковороду, стараясь не повредить желток.<br> 3. Посолите по вкусу и жарьте 2-3 минуты.<br> 4. Лопаткой аккуратно переложите яичницу на тарелку и подавайте на стол.</div>
+			<div class="row content_between new_card_p dot_styled_bottom p_b_card"><div class="new_card_h3">Итого на порцию:</div><div>24 р.</div></div>
 		</div>
-		<% @counter = 0 %>
+
+		<% $counter = 0 %>
 		<% @posts.each do |post| %>
-				<%@counter = @counter + 1 %>
-                <div id="item1" class="card">
-			<div class="card_img" style="background-image: url(data/photo.png);"></div>
-			<div class="column card_container">
-				<div class="row content_between align_center" style="padding: 10px 20px; width: 100%;">
-					<div class="row">
-						<div class="card_item"><%= post.tags %></div>
-					</div>
-					<input id="itemCheck" onclick="" class="card_checkbox" style="" type="checkbox" name="">
-				</div>
-				<div class="card_h"><%= post.title %></div>
-				<div class="card_text" id="area1" onclick="moreOn(1)">
-					<%= post.body %>
-				</div>
-				<textarea class="hidden" id="textarea1">
-						1. Сковороду растительное разогреть с растительным маслом.<br>
-						2. Помидор промыть, разрезать пополам и каждую половину нарезать вертикально на ломтики.<br>
-						3. Когда масло прогрелось выкладываем помидоры, перемешиваем и жарим закрытой крышкой.
-						Когда помидоры поджарились аккуратно разбиваем яйца и жарим не закрывая крышки, чтобы не испортить внешний вид желтка. Так он останется и жидким и не покроется не прозрачной пленкой. 
-						Когда белок поджарится аккуратно выкладываем яичницу на тарелку, солим если требуется и подаем. Не солим когда жарим, чтобы не получить белых пятен на желтке. 
-
-						Приятного аппетита.
-					</textarea>
-				<div class="row content_start" style="padding-left: 40px;">
-					<a class="card_btn">12.12.12</a>
-					<a class="card_btn">save</a>
-					<a class="card_btn">edit</a>
-					<a class="card_btn">dest</a>
-				</div>
-
+		<%$counter = $counter + 1 %>
+		<div id = "y<%= $counter %>" onclick="newCardOpen(<%= $counter %>)" class="new_card p_l_card p_r_card p_t_card m_b_card">
+			<div class="new_card_h m_b_card"><%= post.title %></div>
+			<div class="row content_between new_card_p dot_styled_bottom m_b_card p_b_card"><div>12.12.2021</div><div>12:00</div></div>
+			<div class="new_card_h3">Ингридиенты</div>
+			<div class="row content_between new_card_p"><div><%= post.tags %></div><div><%= $counter %> шт</div></div>
+			<div class="row content_between new_card_p dot_styled_bottom m_b_card p_b_card"><div class="new_card_h3">Время приготовления:</div><div>2 ч.</div></div>
+			<div class="new_card_h3">Рецепт</div>
+			<div class="dot_styled_bottom m_b_card p_b_card new_card_p">
+				<%= post.body %>
 			</div>
+			<div class="row content_between new_card_p dot_styled_bottom p_b_card"><div class="new_card_h3">Итого на порцию:</div><div>24 р.</div></div>
 		</div>
        <% end %>
 		
@@ -122,6 +76,18 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 <script type="text/javascript">
+	function newCardOpen(arg){
+		let elem = document.getElementById('y'+arg);
+		elem.style.minHeight = '360px';
+		elem.style.maxHeight = 'unset';
+		elem.setAttribute("onclick", "newCardClose("+arg+");");
+	}
+	function newCardClose(arg) {
+		let elem = document.getElementById('y'+arg);
+		elem.style.maxHeight = '243px';
+		elem.style.minHeight = 'unset';
+		elem.setAttribute("onclick", "newCardOpen("+arg+");");
+	}
 	function colorDef(arg) {
 		let elem = document.getElementById('item'+arg);
 		let elem2 = document.getElementById('itemCheck'+arg);

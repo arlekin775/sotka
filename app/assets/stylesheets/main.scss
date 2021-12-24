@@ -12,6 +12,7 @@
     font-family: "ArialBold";
     src: url("fonts/arialbold.ttf");
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 .row{
     display: flex;
     flex-direction: row;
@@ -21,8 +22,9 @@
     flex-direction: column;
 }
 header{
-    border-bottom: 1px solid #090909;
+    border-bottom: 5px solid #4C4C4C;
     padding: 20px 50px;
+    border-bottom-style: dotted;
 }
 .content_between{
     justify-content: space-between;
@@ -50,7 +52,8 @@ header{
 }
 body{
     margin: 0;
-    font-family: 'Arial';
+    font-family: 'Roboto Condensed';
+    background-color: #ECEEEE;
 }
 ul{
     list-style-type: none;
@@ -69,7 +72,6 @@ ul{
     margin: 0 0 !important;
 }
 .section1{
-    background-image: url(imgs/back1.png);
     background-repeat: no-repeat;
     background-position-x: right;
 }
@@ -89,7 +91,7 @@ ul{
     text-align: center;
 }
 .section_p{
-    font-family: 'Arial';
+    font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -98,15 +100,15 @@ ul{
     color: #000000;
 }
 .section_p_style2{
-    font-family: 'Arial';
+    font-family: 'Roboto Condensed';
     font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
     color: #000000;
 }
 .section_p_style3{
-    font-family: 'ArialBold';
+    font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -129,6 +131,9 @@ ul{
 .m_width_50{
     max-width: 50%;
 }
+.w_50_dot{
+    width: 47.35%;
+}
 .p_l_section{
     padding-left: 50px;
 }
@@ -139,12 +144,6 @@ ul{
     padding-top: 130px;
 }
 .section2{
-    background-image: url(imgs/back2.png);
-    background-repeat-x: repeat;
-    background-repeat-y: no-repeat;
-    background-position-x: center;
-    background-size: contain;
-    height: 310px;
     padding-top: 80px;
 }
 .m_t_section{
@@ -169,13 +168,12 @@ ul{
     margin-bottom: 200px;
 }
 .circle{
-    background-image: url(imgs/circle.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 250px;
-    width: 250px;
-    padding-top: 130px;
+    height: 240px;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .circle_2{
     background-image: url(imgs/circle2.png) !important;
@@ -185,12 +183,25 @@ ul{
 .circle_2 h1{
     font-size: 27px !important;
 }
+.dot_styled{
+    border-bottom: 5px solid #4C4C4C;
+    border-bottom-style: dotted;
+    border-top: 5px solid #4C4C4C;
+    border-top-style: dotted;
+}
+.dot_styled_right{
+    border-right: 5px solid #4C4C4C;
+    border-right-style: dotted;
+}
+.dot_styled_bottom{
+    border-bottom: 5px solid #4C4C4C;
+    border-bottom-style: dotted;
+}
+.dot_styled_top{
+    border-top: 5px solid #4C4C4C;
+    border-top-style: dotted;
+}
 .group_items{
-    background-image: url(imgs/shtuki.png);
-    height: 380px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     width: 100%;
 }
 .input{
@@ -199,7 +210,7 @@ ul{
     box-sizing: border-box;
     border-radius: 50px;
     padding-left: 20px;
-    font-family: Arial;
+    font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -214,7 +225,7 @@ ul{
     border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 50px;
-    font-family: Arial;
+    font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -224,7 +235,7 @@ ul{
     cursor: pointer;
 }
 .p_new{
-    font-family: Arial;
+    font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -247,7 +258,7 @@ ul{
     border-top: 1px solid #090909;
 }
 .p_l_section_num{
-    margin-left: 50px !important;
+    padding-left: 25px !important;
 }
 .new_style11{
     margin-bottom: 50px;
@@ -297,7 +308,7 @@ ul{
     border: 1px solid black;
 }
 .input2{
-    font-family: Arial;
+    font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -310,7 +321,7 @@ ul{
     max-width: 85%;
 }
 .label{
-    font-family: Arial;
+    font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -361,7 +372,7 @@ textarea{
     flex-direction: row;
     align-items: center;
     padding: 0px 16px;
-    font-family: Arial;
+    font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -386,7 +397,7 @@ textarea{
 
 }
 .card_text{
-    font-family: Arial;
+    font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -397,7 +408,7 @@ textarea{
     color: #000000;
 }
 .card_btn{
-    font-family: Arial;
+    font-family: Roboto Condensed;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -424,7 +435,7 @@ textarea{
     display: none;
 }
 .btn_yellow{
-    background-color: #FBFF42 !important;
+    background-color: white !important;
     cursor: pointer;
 }
 .logo{
@@ -432,5 +443,172 @@ textarea{
     cursor: pointer;
 }
 .bold_text{
-    font-family: 'ArialBold';
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+}
+.p_t_num{
+    
+    padding-top: 30px;
+
+}
+.p_b_num{
+    padding-bottom:30px;
+}
+.p_new_section_style1{
+    font-family: Epson1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 45px;
+    color: #4C4C4C;
+}
+.p_new_section_style2{
+    font-family: Epson1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 91px;
+    color: #000000;
+}
+.p_new_section_style3{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+}
+.p_new_section_style4{
+    visibility:hidden;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+}
+.p_l_20px{
+    padding-left:20px;
+}
+.p_l_21px{
+    padding-left:20px;
+}
+.p_l_25px{
+    padding-left:25px;
+}
+.div_h_120px{
+    height: 120px;
+}
+.input_style2{
+    border:none;
+    border-bottom: 5px solid #4C4C4C;
+    border-bottom-style: dotted;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #4C4C4C;
+    background-color: transparent;
+    padding-bottom: 10px;
+    width: 48%;
+    margin-top: 30px;
+}
+.input_style2:focus-visible{
+    outline: none;
+}
+.p_in_new{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #4C4C4C;
+    margin-block-end: 0.5em;
+}
+.new_card_h{
+    font-family: Epson1;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    color: #4C4C4C;
+    text-align: center;
+
+}
+.new_card_p{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    color: #4C4C4C;
+}
+.new_card_h3{
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #4C4C4C;
+}
+.new_card{
+    width:30%;
+    background-color: white;
+    max-height: 243px;
+    overflow: hidden;
+}
+.p_l_card{
+    padding-left:10px;
+}
+.p_r_card{
+    padding-right:10px;
+}
+.p_t_card{
+    padding-top: 20px;
+}
+.m_b_card{
+    margin-bottom: 10px;  
+}
+.p_b_card{
+    padding-bottom: 10px;  
+}
+.m_b_card_big{
+    padding-bottom: 15px;  
+}
+.new_card_dark{
+    background-color: #4C4C4C !important;
+    color: white !important;
+}
+@media(max-height: 619px){
+    .circle{
+        width:49%;
+    }
+    .mobile_dot2{
+        border-right: unset;
+    }
+    .mobile_dot3{
+        border-top: 5px solid #4C4C4C;
+        border-top-style: dotted;
+        border-right: 5px solid #4C4C4C;
+        border-right-style: dotted;
+    }
+    .mobile_dot4{
+        border-top: 5px solid #4C4C4C;
+        border-top-style: dotted;
+    }
+    .mobile_dot1{
+        border-right: 5px solid #4C4C4C;
+        border-right-style: dotted;
+    }
+    .w_50_dot {
+        width: 45.4%;
+    }
+    .mobh{
+        font-size: 65px;
+    }
+    .new_card {
+        width: 45%;
+    }
+
+    .input_style2 {
+        width: 100%;
+    }
 }
